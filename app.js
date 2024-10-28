@@ -33,7 +33,7 @@ async function sendToGemini(userMessage) {
         const apiKey = process.env.GEMINI_API_KEY;
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
         
-        const prompt = `Tu es un assistant virtuel. L'utilisateur a dit : "${userMessage}". Réponds de façon claire et concise pour l'aider. Répond de façon simple et résumé.`;
+        const prompt = `Tu es un assistant virtuel. L'utilisateur a dit : "${userMessage}". Réponds de façon claire et concise a l'utulisateur dans la discussion whatsapp. Répond de façon simple et résumé.`;
 
 
         const body = {
